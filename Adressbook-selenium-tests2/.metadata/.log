@@ -1,0 +1,131 @@
+!SESSION 2014-01-09 13:29:53.586 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:45.372
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 37376 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse-1517423904\testng-customsuite.xml
+java -ea -classpath /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar:C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin:C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar:C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar org.testng.remote.RemoteTestNG -serport 37376 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse-1517423904\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:58.987
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:src [in Adressbook-selenium-tests]
+  <default> (...)
+  com (...)
+  com.example (...)
+  com.example.tests (...)
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:58.989
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:<default> [in src [in Adressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:58.992
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com [in src [in Adressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:58.995
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example [in src [in Adressbook-selenium-tests]]
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:58.998
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:com.example.tests [in src [in Adressbook-selenium-tests]]
+  GroupData.java
+    package com.example.tests
+    class GroupData
+      String groupName
+      String groupHeader
+      String groupFooter
+      GroupData()
+      GroupData(String, String, String)
+  ContactDataParameter.java
+    package com.example.tests
+    class ContactDataParameter
+      String firstname
+      String lastname
+      String address
+      String homePhone
+      String mobilePhone
+      String workPhone
+      String email
+      String email2
+      String bday
+      String bmonth
+      String byear
+      String choseGroupName
+      String address2
+      String phone2
+      ContactDataParameter()
+  [Working copy] TestBase.java
+    package com.example.tests
+    import org.junit.Assert.fail
+    import java.util.concurrent.TimeUnit
+    import org.openqa.selenium.Alert
+    import org.openqa.selenium.By
+    import org.openqa.selenium.NoAlertPresentException
+    import org.openqa.selenium.NoSuchElementException
+    import org.openqa.selenium.WebDriver
+    import org.openqa.selenium.firefox.FirefoxDriver
+    import org.openqa.selenium.support.ui.Select
+    import org.testng.annotations.AfterTest
+    import org.testng.annotations.BeforeTest
+    class TestBase
+      WebDriver driver
+      String baseUrl
+      boolean acceptNextAlert
+      StringBuffer verificationErrors
+      void setUp()
+      void tearDown()
+      void returnToGroupsPage()
+      void submitGroupCreation()
+      void fillGroupForm(GroupData)
+      void initGroupCreation()
+      void gotoGroupsPage()
+      void openMainPage()
+      boolean isElementPresent(By)
+      boolean isAlertPresent()
+      String closeAlertAndGetItsText()
+      void sumbitContact()
+      void contactData(ContactDataParameter)
+      void addNewContact()
+  [Working copy] ContactBook.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class ContactBook
+      void createContact()
+      void createEmptyContact()
+  [Working copy] GroupCreationTests.java
+    package com.example.tests
+    import org.testng.annotations.Test
+    class GroupCreationTests
+      void testNonEmptyGroupCreation()
+      void testEmptyGroupCreation()
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:36:59.036
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 37395 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse--1111165257\testng-customsuite.xml
+java -ea -classpath /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar:C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin:C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar:C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar org.testng.remote.RemoteTestNG -serport 37395 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse--1111165257\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2014-01-09 13:48:24.827
+!MESSAGE Failed to open search index.
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:55:38.824
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] ContactBook.java [in com.example.tests [in src [in Adressbook-selenium-tests]]]
+  package com.example.tests
+  import org.testng.annotations.Test
+  class ContactBook
+    void createContact()
+    void createEmptyContact()
+
+!ENTRY org.testng.eclipse 1 0 2014-01-09 13:55:41.704
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 38184 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse-91187614\testng-customsuite.xml
+java -ea -classpath /C:/Users/s.sytin/Desktop/Курсы/eclipse/plugins/org.testng.eclipse_6.8.6.20130914_0724/lib/testng.jar:C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\bin:C:\Users\s.sytin\Desktop\Курсы\selenium-server-standalone-2.39.0.jar:C:\Users\s.sytin\Desktop\Курсы\eclipse\plugins\org.testng.eclipse_6.8.6.20130914_0724\lib\testng.jar org.testng.remote.RemoteTestNG -serport 38184 -d C:\Users\s.sytin\Desktop\Курсы\Git\Programming-for-testers\Adressbook-selenium-tests2\Adressbook-selenium-tests\test-output C:\Users\S114A~1.SYT\AppData\Local\Temp\testng-eclipse-91187614\testng-customsuite.xml

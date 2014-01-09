@@ -1,0 +1,13 @@
+1389259940497	Delete element
+1389260532104	Move method 'returnToGroupsPage'
+1389260557896	Move method 'submitGroupCreation'
+1389260570896	Move method 'fillGroupForm'
+1389260579364	Move method 'initGroupCreation'
+1389260585789	Move method 'gotoGroupsPage'
+1389260600357	Move method 'openMainPage'
+1389260608601	Move method 'isElementPresent'
+1389260615080	Move method 'isAlertPresent'
+1389260620839	Move method 'closeAlertAndGetItsText'
+1389260627320	Move method 'sumbitContact'
+1389260636829	Move method 'contactData'
+1389260648673	Move method 'addNewContact'
