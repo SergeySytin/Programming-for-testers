@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class ContactBook extends TestBase {
   @Test
   public void createContact() throws Exception {
-    app.openMainPage();
-    app.addNewContact();
+    app.getNavigationHelper().openMainPage();
+    app.getContactHelper().addNewContact();
     ContactDataParameter parameterObject = new ContactDataParameter();
     parameterObject.firstname = "FirstName";
     parameterObject.lastname = "LastName";
@@ -24,14 +24,14 @@ public class ContactBook extends TestBase {
     parameterObject.phone2 = "47474747";
 
                                                                                                     
-        app.contactData(this, parameterObject);
-    app.sumbitContact();
+    app.getContactHelper().contactData(parameterObject);
+    app.getContactHelper().sumbitContact();
   }
     
   @Test
   public void createEmptyContact() throws Exception {
-    app.openMainPage();
-    app.addNewContact();
+    app.getNavigationHelper().openMainPage();
+    app.getContactHelper().addNewContact();
     ContactDataParameter parameterObject = new ContactDataParameter();
     parameterObject.firstname = "";
     parameterObject.lastname = "";
@@ -47,6 +47,6 @@ public class ContactBook extends TestBase {
     parameterObject.choseGroupName = "";
     parameterObject.address2 = "";
     parameterObject.phone2 = "";
-    app.sumbitContact();
+    app.getContactHelper().sumbitContact();
   }
 }

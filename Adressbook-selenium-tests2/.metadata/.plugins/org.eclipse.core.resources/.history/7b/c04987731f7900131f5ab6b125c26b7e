@@ -1,0 +1,11 @@
+package com.example.fw;
+
+import org.openqa.selenium.By;
+
+public class ContactHelper {
+
+	public void sumbitContact() {
+	        ApplicationManager.driver.findElement(By.name("submit")).click();
+	}
+
+}
